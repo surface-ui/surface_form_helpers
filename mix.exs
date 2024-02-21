@@ -34,8 +34,8 @@ defmodule Surface.Form.MixProject do
       {:phoenix_html, "~> 3.3.1"},
       {:jason, "~> 1.0", only: :test},
       {:floki, "~> 0.35", only: :test},
-      {:phoenix_ecto, "~> 4.3", only: :test}
-      # {:ecto, "~> 3.9.5 or ~> 3.9", only: :test},
+      {:phoenix_ecto, "~> 4.3", only: :test},
+      {:ecto, "~> 3.9.5 or ~> 3.9", only: :test}
     ]
   end
 end
