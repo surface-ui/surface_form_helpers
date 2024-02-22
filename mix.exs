@@ -30,7 +30,7 @@ defmodule Surface.Form.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:surface, github: "surface-ui/surface", ref: "extract_surface_form"},
+      {:surface, github: "surface-ui/surface", ref: "main"},
       {:phoenix_html, "~> 3.3.1"},
       {:jason, "~> 1.0", only: :test},
       {:floki, "~> 0.35", only: :test},
