@@ -1,15 +1,26 @@
 defmodule Surface.Form.MixProject do
   use Mix.Project
 
+  @version "0.1.0"
+  @source_url "https://github.com/surface-ui/surface_form"
+
   def project do
     [
       app: :surface_form,
-      version: "0.1.0",
+      version: @version,
       elixir: "~> 1.13",
+      description: "Wrappers for Phoenix.HTML.Form functions",
       start_permanent: Mix.env() == :prod,
       elixirc_paths: elixirc_paths(Mix.env()),
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      preferred_cli_env: [docs: :docs],
+      # Docs
+      name: "Surface Form",
+      source_url: @source_url,
+      homepage_url: "https://surface-ui.org",
+      docs: docs(),
+      package: package()
     ]
   end
 
@@ -46,7 +57,30 @@ defmodule Surface.Form.MixProject do
       {:jason, "~> 1.0", only: [:dev, :test]},
       {:floki, "~> 0.35", only: :test},
       {:phoenix_ecto, "~> 4.3", only: :test},
-      {:ecto, "~> 3.9.5 or ~> 3.9", only: :test}
+      {:ecto, "~> 3.9.5 or ~> 3.9", only: :test},
+      {:ex_doc, ">= 0.31.1", only: :docs, runtime: false}
     ]
+  end
+
+  defp docs do
+    [
+      main: "readme",
+      source_ref: "v#{@version}",
+      nest_modules_by_prefix: [
+        Surface.Components,
+        Surface.Components.Form
+      ],
+      extras: [
+        "README.md",
+        "LICENSE.md"
+      ]
+    ]
+  end
+
+  defp package do
+    %{
+      licenses: ["MIT"],
+      links: %{"GitHub" => @source_url}
+    }
   end
 end

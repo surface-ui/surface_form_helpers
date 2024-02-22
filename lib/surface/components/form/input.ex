@@ -45,8 +45,16 @@ defmodule Surface.Components.Form.Input do
     config[component][:default_class] || config[__MODULE__][:default_class]
   end
 
-  # TODO: deprecate this component in favor of `from_context` option
   defmodule InputContext do
+    @moduledoc """
+    Retrieves `form` and `field` values from the context.
+
+    This module is deprecated. Use option `from_context` instead. Example:
+
+        prop form, :form, from_context: {Form, :form}
+    """
+
+    @moduledoc deprecated: "Use option from_context instead"
     use Surface.Component
 
     @doc "The assigns of the host component"
