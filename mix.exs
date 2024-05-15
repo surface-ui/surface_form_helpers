@@ -31,7 +31,8 @@ defmodule Surface.Form.MixProject do
   defp deps do
     [
       {:surface, github: "surface-ui/surface", ref: "main"},
-      {:phoenix_html, "~> 3.3.1"},
+      {:phoenix_html, "~> 4.1"},
+      {:phoenix_html_helpers, "~> 1.0"},
       {:jason, "~> 1.0", only: :test},
       {:floki, "~> 0.35", only: :test},
       {:phoenix_ecto, "~> 4.3", only: :test},
