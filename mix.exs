@@ -8,6 +8,7 @@ defmodule Surface.Form.MixProject do
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
       elixirc_paths: elixirc_paths(Mix.env()),
+      aliases: aliases(),
       deps: deps()
     ]
   end
@@ -23,16 +24,26 @@ defmodule Surface.Form.MixProject do
   defp elixirc_paths(:test), do: ["lib", "test/support"] ++ catalogues()
   defp elixirc_paths(_), do: ["lib"]
 
-  defp catalogues do
+  def catalogues do
     ["priv/catalogue"]
+  end
+
+  defp aliases do
+    [
+      dev: "run --no-halt dev.exs"
+    ]
   end
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:surface, github: "surface-ui/surface", ref: "main"},
+      {:surface, "~> 0.12-dev", github: "surface-ui/surface", override: true},
       {:phoenix_html, "~> 3.3.1"},
-      {:jason, "~> 1.0", only: :test},
+      {:surface_catalogue, only: :dev, github: "surface-ui/surface_catalogue"},
+      {:esbuild, "~> 0.2", only: :dev},
+      {:plug_cowboy, "~> 2.0", only: :dev},
+      {:phoenix_live_reload, "~> 1.2", only: :dev},
+      {:jason, "~> 1.0", only: [:dev, :test]},
       {:floki, "~> 0.35", only: :test},
       {:phoenix_ecto, "~> 4.3", only: :test},
       {:ecto, "~> 3.9.5 or ~> 3.9", only: :test}
