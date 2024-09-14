@@ -12,6 +12,7 @@ defmodule Surface.Form.MixProject do
 
   @version "0.1.0"
   @source_url "https://github.com/surface-ui/surface_form"
+  @homepage_url "https://surface-ui.org"
 
   def project do
     [
@@ -27,7 +28,7 @@ defmodule Surface.Form.MixProject do
       # Docs
       name: "Surface Form",
       source_url: @source_url,
-      homepage_url: "https://surface-ui.org",
+      homepage_url: @homepage_url,
       docs: docs(),
       package: package()
     ]
@@ -84,6 +85,7 @@ defmodule Surface.Form.MixProject do
       ],
       extras: [
         "README.md",
+        "CHANGELOG.md",
         "LICENSE.md"
       ]
     ]
@@ -92,7 +94,20 @@ defmodule Surface.Form.MixProject do
   defp package do
     %{
       licenses: ["MIT"],
-      links: %{"GitHub" => @source_url}
+      links: %{
+        Website: @homepage_url,
+        Changelog: "https://hexdocs.pm/surface_form/changelog.html",
+        GitHub: @source_url
+      },
+      files: ~w(
+          README.md
+          CHANGELOG.md
+          LICENSE.md
+          mix.exs
+          lib
+          assets
+          priv/catalogue
+        )
     }
   end
 end
