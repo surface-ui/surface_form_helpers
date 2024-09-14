@@ -41,7 +41,12 @@ defmodule Surface.Components.Form.DateTimeSelectTest do
     html =
       render_surface do
         ~F"""
-        <DateTimeSelect form="user" field="born_at" value={%{year: 2020, month: 10, day: 9, hour: 2, minute: 11, second: 13}} second={[]} />
+        <DateTimeSelect
+          form="user"
+          field="born_at"
+          value={%{year: 2020, month: 10, day: 9, hour: 2, minute: 11, second: 13}}
+          second={[]}
+        />
         """
       end
 
@@ -57,7 +62,7 @@ defmodule Surface.Components.Form.DateTimeSelectTest do
     html =
       render_surface do
         ~F"""
-        <DateTimeSelect form="user" field="born_at" value={{ {2020, 10, 9}, {2, 11, 13} }} second={[]} />
+        <DateTimeSelect form="user" field="born_at" value={{{2020, 10, 9}, {2, 11, 13}}} second={[]} />
         """
       end
 
@@ -73,7 +78,12 @@ defmodule Surface.Components.Form.DateTimeSelectTest do
     html =
       render_surface do
         ~F"""
-        <DateTimeSelect form="user" field="born_at" default={%{year: 2020, month: 10, day: 9, hour: 2, minute: 11, second: 13}} second={[]} />
+        <DateTimeSelect
+          form="user"
+          field="born_at"
+          default={%{year: 2020, month: 10, day: 9, hour: 2, minute: 11, second: 13}}
+          second={[]}
+        />
         """
       end
 
@@ -89,7 +99,7 @@ defmodule Surface.Components.Form.DateTimeSelectTest do
     html =
       render_surface do
         ~F"""
-        <DateTimeSelect form="user" field="born_at" default={{ {2020, 10, 9}, {2, 11, 13} }} second={[]} />
+        <DateTimeSelect form="user" field="born_at" default={{{2020, 10, 9}, {2, 11, 13}}} second={[]} />
         """
       end
 
@@ -121,7 +131,7 @@ defmodule Surface.Components.Form.DateTimeSelectTest do
               "Minute: ",
               b.(:minute, class: "minute"),
               "Second: ",
-              b.(:second, class: "second"),
+              b.(:second, class: "second")
             ]
           end}
         />
@@ -201,13 +211,7 @@ defmodule Surface.Components.Form.DateTimeSelectTest do
     html =
       render_surface do
         ~F"""
-        <DateTimeSelect
-          form="user"
-          field="born_at"
-          second={[]}
-          id="born_at"
-          name="born_at"
-        />
+        <DateTimeSelect form="user" field="born_at" second={[]} id="born_at" name="born_at" />
         """
       end
 

@@ -37,6 +37,6 @@ defmodule Surface.Components.Form.TelephoneInput do
 
     assigns = assign(assigns, opts: opts)
 
-    ~F[{telephone_input(@form, @field,  @opts)}]
+    ~F[{telephone_input(@form, @field, @opts)}]
   end
 end

@@ -72,7 +72,7 @@ defmodule Surface.Components.Link.Button do
     assigns = assign(assigns, to: to, opts: events ++ opts)
 
     ~F"""
-    <button id={@id} class={@class} :attrs={@opts}><#slot>{@label}</#slot></button>
+    <button id={@id} class={@class} {...@opts}><#slot>{@label}</#slot></button>
     """
   end
 

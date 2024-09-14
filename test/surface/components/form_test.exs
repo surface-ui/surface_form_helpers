@@ -201,7 +201,7 @@ defmodule Surface.Components.FormTest do
     html = render_surface(do: ~F[<Form for={%{}} as={:user} />])
     refute html =~ ~r/phx-trigger-action/
 
-    html = render_surface(do: ~F[<Form for={%{}} as={:user} trigger_action={true} />])
+    html = render_surface(do: ~F[<Form for={%{}} as={:user} trigger_action />])
     assert html =~ ~r/phx-trigger-action/
   end
 end

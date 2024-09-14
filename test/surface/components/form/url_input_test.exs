@@ -126,7 +126,7 @@ defmodule Surface.Components.Form.UrlInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <UrlInput/>
+          <UrlInput />
           """
         end
 
@@ -139,7 +139,7 @@ defmodule Surface.Components.Form.UrlInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <UrlInput/>
+          <UrlInput />
           """
         end
 
@@ -153,7 +153,7 @@ defmodule Surface.Components.Form.UrlInputConfigTest do
         html =
           render_surface do
             ~F"""
-            <UrlInput/>
+            <UrlInput />
             """
           end
 

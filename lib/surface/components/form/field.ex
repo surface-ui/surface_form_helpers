@@ -23,7 +23,7 @@ defmodule Surface.Components.Form.Field do
   def render(assigns) do
     ~F"""
     <div class={class_value(@class)}>
-      <#slot context_put={__MODULE__, field: @name}/>
+      <#slot context_put={__MODULE__, field: @name} />
     </div>
     """
   end

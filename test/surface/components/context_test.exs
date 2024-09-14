@@ -10,7 +10,7 @@ defmodule Surface.Components.ContextTest do
       ~F"""
       <Inputs for={:children}>
         <Field name={:name}>
-          <TextInput/>
+          <TextInput />
         </Field>
       </Inputs>
       """
@@ -25,7 +25,7 @@ defmodule Surface.Components.ContextTest do
         render_surface do
           ~F"""
           <Form for={%{}} as={:parent} opts={csrf_token: "test"}>
-            <InputsWithNestedField/>
+            <InputsWithNestedField />
           </Form>
           """
         end

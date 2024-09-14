@@ -75,7 +75,7 @@ defmodule Surface.Components.Form.CheckboxTest do
     html =
       render_surface do
         ~F"""
-        <Checkbox form="user" field="admin" checked_value="admin"/>
+        <Checkbox form="user" field="admin" checked_value="admin" />
         """
       end
 
@@ -88,7 +88,7 @@ defmodule Surface.Components.Form.CheckboxTest do
     html =
       render_surface do
         ~F"""
-        <Checkbox value={true}/>
+        <Checkbox value />
         """
       end
 
@@ -97,7 +97,7 @@ defmodule Surface.Components.Form.CheckboxTest do
     html =
       render_surface do
         ~F"""
-        <Checkbox value={false}/>
+        <Checkbox value={false} />
         """
       end
 
@@ -108,7 +108,7 @@ defmodule Surface.Components.Form.CheckboxTest do
     html =
       render_surface do
         ~F"""
-        <Checkbox hidden_input={true}/>
+        <Checkbox hidden_input />
         """
       end
 
@@ -117,7 +117,7 @@ defmodule Surface.Components.Form.CheckboxTest do
     html =
       render_surface do
         ~F"""
-        <Checkbox hidden_input={false}/>
+        <Checkbox hidden_input={false} />
         """
       end
 
@@ -199,7 +199,7 @@ defmodule Surface.Components.Form.CheckboxConfigTest do
       html =
         render_surface do
           ~F"""
-          <Checkbox/>
+          <Checkbox />
           """
         end
 
@@ -213,7 +213,7 @@ defmodule Surface.Components.Form.CheckboxConfigTest do
         html =
           render_surface do
             ~F"""
-            <Checkbox/>
+            <Checkbox />
             """
           end
 

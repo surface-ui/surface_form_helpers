@@ -7,7 +7,7 @@ defmodule Surface.Components.Form.RadioButtonTest do
     html =
       render_surface do
         ~F"""
-        <RadioButton form="user" field="role" value="admin"/>
+        <RadioButton form="user" field="role" value="admin" />
         """
       end
 
@@ -20,7 +20,7 @@ defmodule Surface.Components.Form.RadioButtonTest do
     html =
       render_surface do
         ~F"""
-        <RadioButton form="user" field={:role} value="admin"/>
+        <RadioButton form="user" field={:role} value="admin" />
         """
       end
 
@@ -113,7 +113,7 @@ defmodule Surface.Components.Form.RadioButtonConfigTest do
       html =
         render_surface do
           ~F"""
-          <RadioButton/>
+          <RadioButton />
           """
         end
 
@@ -126,7 +126,7 @@ defmodule Surface.Components.Form.RadioButtonConfigTest do
       html =
         render_surface do
           ~F"""
-          <RadioButton/>
+          <RadioButton />
           """
         end
 
@@ -140,7 +140,7 @@ defmodule Surface.Components.Form.RadioButtonConfigTest do
         html =
           render_surface do
             ~F"""
-            <RadioButton/>
+            <RadioButton />
             """
           end
 

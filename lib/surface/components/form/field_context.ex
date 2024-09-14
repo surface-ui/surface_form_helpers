@@ -20,6 +20,6 @@ defmodule Surface.Components.Form.FieldContext do
   slot default, required: true
 
   def render(assigns) do
-    ~F[<#slot context_put={Field, field: @name}/>]
+    ~F[<#slot context_put={Field, field: @name} />]
   end
 end

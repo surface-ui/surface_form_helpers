@@ -126,7 +126,7 @@ defmodule Surface.Components.Form.TelephoneInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <TelephoneInput/>
+          <TelephoneInput />
           """
         end
 
@@ -139,7 +139,7 @@ defmodule Surface.Components.Form.TelephoneInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <TelephoneInput/>
+          <TelephoneInput />
           """
         end
 
@@ -153,7 +153,7 @@ defmodule Surface.Components.Form.TelephoneInputConfigTest do
         html =
           render_surface do
             ~F"""
-            <TelephoneInput/>
+            <TelephoneInput />
             """
           end
 

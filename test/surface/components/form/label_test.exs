@@ -8,7 +8,7 @@ defmodule Surface.Components.Form.LabelTest do
     html =
       render_surface do
         ~F"""
-        <Label opts={id: "my_id"}/>
+        <Label opts={id: "my_id"} />
         """
       end
 
@@ -19,7 +19,7 @@ defmodule Surface.Components.Form.LabelTest do
     html =
       render_surface do
         ~F"""
-        <Label class={:label}/>
+        <Label class={:label} />
         """
       end
 
@@ -30,7 +30,7 @@ defmodule Surface.Components.Form.LabelTest do
     html =
       render_surface do
         ~F"""
-        <Label class={:label, :primary}/>
+        <Label class={:label, :primary} />
         """
       end
 
@@ -41,7 +41,7 @@ defmodule Surface.Components.Form.LabelTest do
     html =
       render_surface do
         ~F"""
-        <Label form="user" field="name"/>
+        <Label form="user" field="name" />
         """
       end
 
@@ -52,7 +52,7 @@ defmodule Surface.Components.Form.LabelTest do
     html =
       render_surface do
         ~F"""
-        <Label form={:user} field={:name}/>
+        <Label form={:user} field={:name} />
         """
       end
 
@@ -65,7 +65,7 @@ defmodule Surface.Components.Form.LabelTest do
         ~F"""
         <Form for={%{}} as={:user}>
           <Field name="name">
-            <Label/>
+            <Label />
           </Field>
         </Form>
         """
@@ -213,7 +213,7 @@ defmodule Surface.Components.Form.LabelConfigTest do
       html =
         render_surface do
           ~F"""
-          <Label/>
+          <Label />
           """
         end
 

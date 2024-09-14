@@ -8,7 +8,7 @@ defmodule Surface.Components.FieldContextTest do
       render_surface do
         ~F"""
         <FieldContext name="my_field">
-          <TextInput form="my_form"/>
+          <TextInput form="my_form" />
         </FieldContext>
         """
       end
@@ -21,7 +21,7 @@ defmodule Surface.Components.FieldContextTest do
       render_surface do
         ~F"""
         <FieldContext name={:my_field}>
-          <TextInput form="my_form"/>
+          <TextInput form="my_form" />
         </FieldContext>
         """
       end

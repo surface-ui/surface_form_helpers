@@ -126,7 +126,7 @@ defmodule Surface.Components.Form.PasswordInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <PasswordInput/>
+          <PasswordInput />
           """
         end
 
@@ -139,7 +139,7 @@ defmodule Surface.Components.Form.PasswordInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <PasswordInput/>
+          <PasswordInput />
           """
         end
 
@@ -153,7 +153,7 @@ defmodule Surface.Components.Form.PasswordInputConfigTest do
         html =
           render_surface do
             ~F"""
-            <PasswordInput/>
+            <PasswordInput />
             """
           end
 

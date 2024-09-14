@@ -126,7 +126,7 @@ defmodule Surface.Components.Form.TextInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <TextInput/>
+          <TextInput />
           """
         end
 
@@ -139,7 +139,7 @@ defmodule Surface.Components.Form.TextInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <TextInput/>
+          <TextInput />
           """
         end
 
@@ -153,7 +153,7 @@ defmodule Surface.Components.Form.TextInputConfigTest do
         html =
           render_surface do
             ~F"""
-            <TextInput/>
+            <TextInput />
             """
           end
 

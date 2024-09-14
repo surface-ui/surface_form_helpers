@@ -42,7 +42,7 @@ defmodule Surface.Components.FieldTest do
       render_surface do
         ~F"""
         <Field name="my_field">
-          <TextInput form="my_form"/>
+          <TextInput form="my_form" />
         </Field>
         """
       end

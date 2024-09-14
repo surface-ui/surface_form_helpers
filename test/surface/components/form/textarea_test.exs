@@ -132,7 +132,7 @@ defmodule Surface.Components.Form.TextAreaConfigTest do
       html =
         render_surface do
           ~F"""
-          <TextArea/>
+          <TextArea />
           """
         end
 
@@ -145,7 +145,7 @@ defmodule Surface.Components.Form.TextAreaConfigTest do
       html =
         render_surface do
           ~F"""
-          <TextArea/>
+          <TextArea />
           """
         end
 
@@ -159,7 +159,7 @@ defmodule Surface.Components.Form.TextAreaConfigTest do
         html =
           render_surface do
             ~F"""
-            <TextArea/>
+            <TextArea />
             """
           end
 

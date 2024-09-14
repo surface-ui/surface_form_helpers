@@ -126,7 +126,7 @@ defmodule Surface.Components.Form.TimeInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <TimeInput/>
+          <TimeInput />
           """
         end
 
@@ -139,7 +139,7 @@ defmodule Surface.Components.Form.TimeInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <TimeInput/>
+          <TimeInput />
           """
         end
 
@@ -153,7 +153,7 @@ defmodule Surface.Components.Form.TimeInputConfigTest do
         html =
           render_surface do
             ~F"""
-            <TimeInput/>
+            <TimeInput />
             """
           end
 

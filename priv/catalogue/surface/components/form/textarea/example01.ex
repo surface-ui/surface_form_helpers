@@ -6,11 +6,7 @@ defmodule Surface.Components.Form.TextArea.Example01 do
 
   def render(assigns) do
     ~F"""
-    <TextArea
-      rows="4"
-      class="textarea"
-      opts={placeholder: "4 lines of textarea"}
-    />
+    <TextArea rows="4" class="textarea" opts={placeholder: "4 lines of textarea"} />
     """
   end
 end

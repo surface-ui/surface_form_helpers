@@ -46,7 +46,7 @@ defmodule Surface.Components.Form.ColorInputTest do
     html =
       render_surface do
         ~F"""
-        <ColorInput form="user" field="color" class="input"/>
+        <ColorInput form="user" field="color" class="input" />
         """
       end
 
@@ -57,7 +57,7 @@ defmodule Surface.Components.Form.ColorInputTest do
     html =
       render_surface do
         ~F"""
-        <ColorInput form="user" field="color" class="input primary"/>
+        <ColorInput form="user" field="color" class="input primary" />
         """
       end
 
@@ -126,7 +126,7 @@ defmodule Surface.Components.Form.ColorInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <ColorInput/>
+          <ColorInput />
           """
         end
 
@@ -139,7 +139,7 @@ defmodule Surface.Components.Form.ColorInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <ColorInput/>
+          <ColorInput />
           """
         end
 
@@ -153,7 +153,7 @@ defmodule Surface.Components.Form.ColorInputConfigTest do
         html =
           render_surface do
             ~F"""
-            <ColorInput/>
+            <ColorInput />
             """
           end
 

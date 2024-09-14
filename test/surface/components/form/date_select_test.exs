@@ -89,13 +89,7 @@ defmodule Surface.Components.Form.DateSelectTest do
     html =
       render_surface do
         ~F"""
-        <DateSelect
-          form="user"
-          field="born_at"
-          year={prompt: "Year"}
-          month={prompt: "Month"}
-          day={prompt: "Day"}
-        />
+        <DateSelect form="user" field="born_at" year={prompt: "Year"} month={prompt: "Month"} day={prompt: "Day"} />
         """
       end
 
@@ -118,7 +112,7 @@ defmodule Surface.Components.Form.DateSelectTest do
               "Month: ",
               b.(:month, class: "month"),
               "Day: ",
-              b.(:day, class: "day"),
+              b.(:day, class: "day")
             ]
           end}
         />
@@ -157,12 +151,7 @@ defmodule Surface.Components.Form.DateSelectTest do
     html =
       render_surface do
         ~F"""
-        <DateSelect
-          form="user"
-          field="born_at"
-          id="born_at"
-          name="born_at"
-        />
+        <DateSelect form="user" field="born_at" id="born_at" name="born_at" />
         """
       end
 

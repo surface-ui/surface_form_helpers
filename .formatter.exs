@@ -1,7 +1,10 @@
 # Used by "mix format"
 [
   import_deps: [:phoenix, :surface],
-  plugins: [Phoenix.LiveView.HTMLFormatter],
+  plugins: [
+    Phoenix.LiveView.HTMLFormatter,
+    Surface.Formatter.Plugin
+  ],
   line_length: 115,
   inputs: [
     "{mix,.formatter}.exs",

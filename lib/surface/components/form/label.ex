@@ -54,7 +54,7 @@ defmodule Surface.Components.Form.Label do
     assigns = assign(assigns, opts: opts)
 
     ~F"""
-    <label :attrs={input_id(@form, @field) ++ @opts}>
+    <label {...input_id(@form, @field) ++ @opts}>
       <#slot>{@text || Phoenix.Naming.humanize(@field)}</#slot>
     </label>
     """

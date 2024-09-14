@@ -46,7 +46,7 @@ defmodule Surface.Components.Form.DateInputTest do
     html =
       render_surface do
         ~F"""
-        <DateInput form="user" field="birthday" class="input"/>
+        <DateInput form="user" field="birthday" class="input" />
         """
       end
 
@@ -57,7 +57,7 @@ defmodule Surface.Components.Form.DateInputTest do
     html =
       render_surface do
         ~F"""
-        <DateInput form="user" field="birthday" class="input primary"/>
+        <DateInput form="user" field="birthday" class="input primary" />
         """
       end
 
@@ -126,7 +126,7 @@ defmodule Surface.Components.Form.DateInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <DateInput/>
+          <DateInput />
           """
         end
 
@@ -139,7 +139,7 @@ defmodule Surface.Components.Form.DateInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <DateInput/>
+          <DateInput />
           """
         end
 
@@ -153,7 +153,7 @@ defmodule Surface.Components.Form.DateInputConfigTest do
         html =
           render_surface do
             ~F"""
-            <DateInput/>
+            <DateInput />
             """
           end
 

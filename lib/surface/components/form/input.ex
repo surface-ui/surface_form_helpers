@@ -84,7 +84,7 @@ defmodule Surface.Components.Form.Input do
       field = Context.get(assigns, Surface.Components.Form.Field, :field)
 
       ~F"""
-      <#slot {@default, form: @assigns[:form] || form, field: @assigns[:field] || field}/>
+      <#slot {@default, form: @assigns[:form] || form, field: @assigns[:field] || field} />
       """
     end
   end

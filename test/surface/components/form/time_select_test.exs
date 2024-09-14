@@ -110,7 +110,7 @@ defmodule Surface.Components.Form.TimeSelectTest do
               "Minute: ",
               b.(:minute, class: "minute"),
               "Second: ",
-              b.(:second, class: "second"),
+              b.(:second, class: "second")
             ]
           end}
         />
@@ -169,13 +169,7 @@ defmodule Surface.Components.Form.TimeSelectTest do
     html =
       render_surface do
         ~F"""
-        <TimeSelect
-          form="user"
-          field="born_at"
-          second={[]}
-          id="born_at"
-          name="born_at"
-        />
+        <TimeSelect form="user" field="born_at" second={[]} id="born_at" name="born_at" />
         """
       end
 

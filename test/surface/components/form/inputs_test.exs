@@ -34,7 +34,11 @@ defmodule Surface.Components.Form.InputsTest do
     html =
       render_surface do
         ~F"""
-        <Form for={Parent.changeset(%{children: [%{name: "first"}, %{name: "second"}]})} as={:cs} opts={csrf_token: "test"}>
+        <Form
+          for={Parent.changeset(%{children: [%{name: "first"}, %{name: "second"}]})}
+          as={:cs}
+          opts={csrf_token: "test"}
+        >
           <Inputs for={:children} :let={index: idx}>
             <div>index: <span>{idx}</span></div>
           </Inputs>

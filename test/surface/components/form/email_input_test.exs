@@ -126,7 +126,7 @@ defmodule Surface.Components.Form.EmailInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <EmailInput/>
+          <EmailInput />
           """
         end
 
@@ -139,7 +139,7 @@ defmodule Surface.Components.Form.EmailInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <EmailInput/>
+          <EmailInput />
           """
         end
 
@@ -153,7 +153,7 @@ defmodule Surface.Components.Form.EmailInputConfigTest do
         html =
           render_surface do
             ~F"""
-            <EmailInput/>
+            <EmailInput />
             """
           end
 

@@ -125,7 +125,7 @@ defmodule Surface.Components.Link.ButtonTest do
     html =
       render_surface do
         ~F"""
-        <ComponentWithButton id="comp"/>
+        <ComponentWithButton id="comp" />
         """
       end
 
@@ -162,7 +162,7 @@ defmodule Surface.Components.Link.ButtonTest do
       html =
         render_surface do
           ~F"""
-          <Button label="hello" to="/world"  opts={csrf_token: false} />
+          <Button label="hello" to="/world" opts={csrf_token: false} />
           """
         end
 

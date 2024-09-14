@@ -139,7 +139,7 @@ defmodule Surface.Components.Form.RangeInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <RangeInput/>
+          <RangeInput />
           """
         end
 
@@ -152,7 +152,7 @@ defmodule Surface.Components.Form.RangeInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <RangeInput/>
+          <RangeInput />
           """
         end
 
@@ -166,7 +166,7 @@ defmodule Surface.Components.Form.RangeInputConfigTest do
         html =
           render_surface do
             ~F"""
-            <RangeInput/>
+            <RangeInput />
             """
           end
 

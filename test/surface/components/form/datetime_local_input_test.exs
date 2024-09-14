@@ -33,7 +33,7 @@ defmodule Surface.Components.Form.DateTimeLocalInputTest do
     html =
       render_surface do
         ~F"""
-        <DateTimeLocalInput form="order" field="completed_at" class="input"/>
+        <DateTimeLocalInput form="order" field="completed_at" class="input" />
         """
       end
 
@@ -44,7 +44,7 @@ defmodule Surface.Components.Form.DateTimeLocalInputTest do
     html =
       render_surface do
         ~F"""
-        <DateTimeLocalInput form="order" field="completed_at" class="input primary"/>
+        <DateTimeLocalInput form="order" field="completed_at" class="input primary" />
         """
       end
 
@@ -113,7 +113,7 @@ defmodule Surface.Components.Form.DateTimeLocalInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <DateTimeLocalInput/>
+          <DateTimeLocalInput />
           """
         end
 
@@ -126,7 +126,7 @@ defmodule Surface.Components.Form.DateTimeLocalInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <DateTimeLocalInput/>
+          <DateTimeLocalInput />
           """
         end
 
@@ -140,7 +140,7 @@ defmodule Surface.Components.Form.DateTimeLocalInputConfigTest do
         html =
           render_surface do
             ~F"""
-            <DateTimeLocalInput/>
+            <DateTimeLocalInput />
             """
           end
 

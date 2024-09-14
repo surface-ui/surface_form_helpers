@@ -126,7 +126,7 @@ defmodule Surface.Components.Form.SearchInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <SearchInput/>
+          <SearchInput />
           """
         end
 
@@ -139,7 +139,7 @@ defmodule Surface.Components.Form.SearchInputConfigTest do
       html =
         render_surface do
           ~F"""
-          <SearchInput/>
+          <SearchInput />
           """
         end
 
@@ -153,7 +153,7 @@ defmodule Surface.Components.Form.SearchInputConfigTest do
         html =
           render_surface do
             ~F"""
-            <SearchInput/>
+            <SearchInput />
             """
           end
 
