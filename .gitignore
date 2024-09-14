@@ -27,3 +27,7 @@ surface_form-*.tar
 
 # Ignore assets that are produced by build tools.
 /priv/static/assets/
+
+# Ignore blend compiled artifacts and deps
+/blend/_build
+/blend/deps
