@@ -1,3 +1,12 @@
+if File.exists?("blend/premix.exs") do
+  Code.compile_file("blend/premix.exs")
+else
+  defmodule Blend.Premix.SurfaceForm do
+    def patch_project(project), do: project
+    def patch_deps(deps), do: deps
+  end
+end
+
 defmodule Surface.Form.MixProject do
   use Mix.Project
 
@@ -22,6 +31,7 @@ defmodule Surface.Form.MixProject do
       docs: docs(),
       package: package()
     ]
+    |> Blend.Premix.SurfaceForm.patch_project()
   end
 
   # Run "mix help compile.app" to learn about applications.
@@ -55,11 +65,13 @@ defmodule Surface.Form.MixProject do
       {:plug_cowboy, "~> 2.0", only: :dev},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
       {:jason, "~> 1.0", only: [:dev, :test]},
+      {:blend, "~> 0.4.0", only: :dev},
       {:floki, "~> 0.35", only: :test},
       {:phoenix_ecto, "~> 4.3", only: :test},
       {:ecto, "~> 3.9.5 or ~> 3.9", only: :test},
       {:ex_doc, ">= 0.31.1", only: :docs, runtime: false}
     ]
+    |> Blend.Premix.SurfaceForm.patch_deps()
   end
 
   defp docs do
