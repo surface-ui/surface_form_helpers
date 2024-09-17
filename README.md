@@ -1,6 +1,6 @@
 # Surface.Form
 
-Wrappers for `Phoenix.HTML.Form` functions.
+Surface Wrappers for `Phoenix.HTML.Form` functions.
 
 ## Installation
 

@@ -19,7 +19,7 @@ defmodule Surface.Form.MixProject do
       app: :surface_form,
       version: @version,
       elixir: "~> 1.13",
-      description: "Wrappers for Phoenix.HTML.Form functions",
+      description: "Surface wrappers for Phoenix.HTML.Form functions",
       start_permanent: Mix.env() == :prod,
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: Mix.compilers() ++ [:surface],
