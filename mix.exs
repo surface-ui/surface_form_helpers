@@ -22,6 +22,7 @@ defmodule Surface.Form.MixProject do
       description: "Wrappers for Phoenix.HTML.Form functions",
       start_permanent: Mix.env() == :prod,
       elixirc_paths: elixirc_paths(Mix.env()),
+      compilers: Mix.compilers() ++ [:surface],
       aliases: aliases(),
       deps: deps(),
       preferred_cli_env: [docs: :docs],

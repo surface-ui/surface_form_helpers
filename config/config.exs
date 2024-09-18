@@ -17,4 +17,6 @@ if Mix.env() == :dev do
   config :surface_catalogue, Surface.Catalogue.Server.Endpoint,
     code_reloader: true,
     debug_errors: true
+
+  config :surface, :compiler, generate_assets: false
 end
