@@ -1,5 +1,5 @@
 defmodule Surface.Components.Form.Example01 do
-  use Surface.Catalogue.Example,
+  use Surface.Catalogue.LiveExample,
     catalogue: Surface.Components.Catalogue,
     subject: Surface.Components.Form,
     height: "350px",
