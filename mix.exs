@@ -61,7 +61,8 @@ defmodule Surface.Form.MixProject do
   defp deps do
     [
       {:surface, "~> 0.12.0"},
-      {:phoenix_html, "~> 3.3.1"},
+      {:phoenix_html, "~> 4.0"},
+      {:phoenix_html_helpers, "~> 1.0"},
       {:surface_catalogue, "~> 0.6.3", only: :dev},
       {:esbuild, "~> 0.2", only: :dev},
       {:plug_cowboy, "~> 2.0", only: :dev},

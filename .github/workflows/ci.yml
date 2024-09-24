@@ -16,7 +16,7 @@ jobs:
         include:
           - elixir: '1.13.4'
             otp: '24.0'
-            blend: 'phoenix_live_view_0_19_0'
+            blend: 'phoenix_html_0_4_0'
           - elixir: '1.13.4'
             otp: '25.0'
           - elixir: '1.14.0'

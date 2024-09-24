@@ -2,7 +2,7 @@ defmodule Surface.Components.Form do
   @moduledoc """
   Defines a **form** that lets the user submit information.
 
-  Provides a wrapper for `Phoenix.HTML.Form.form_for/3`. Additionally,
+  Provides a wrapper for `PhoenixHTMLHelpers.Form.form_for/3`. Additionally,
   adds the form instance that is returned by `form_for/3` into the context,
   making it available to any child input.
 
@@ -55,7 +55,7 @@ defmodule Surface.Components.Form do
   @doc "Keyword list of errors for the form."
   prop errors, :keyword
 
-  @doc "Keyword list with options to be passed down to `Phoenix.HTML.Tag.tag/2`"
+  @doc "Keyword list with options to be passed down to `PhoenixHTMLHelpers.Tag.tag/2`"
   prop opts, :keyword, default: []
 
   @doc "Class or classes to apply to the form"

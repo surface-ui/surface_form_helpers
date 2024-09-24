@@ -1,6 +1,6 @@
 defmodule Surface.Components.Form.Inputs do
   @moduledoc """
-  A wrapper for `Phoenix.HTML.Form.html.inputs_for/3`.
+  A wrapper for `PhoenixHTMLHelpers.Form.inputs_for/3`.
 
   Additionally, adds the generated form instance that is returned by `inputs_for/3`
   into the context, making it available to any child input.

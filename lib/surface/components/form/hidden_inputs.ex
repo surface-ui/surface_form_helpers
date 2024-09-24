@@ -1,6 +1,6 @@
 defmodule Surface.Components.Form.HiddenInputs do
   @moduledoc """
-  A wrapper for `Phoenix.HTML.Form.html.hidden_inputs_for/1`.
+  A wrapper for `PhoenixHTMLHelpers.Form.hidden_inputs_for/1`.
 
   Generates hidden inputs for the given form.
   """
