@@ -60,9 +60,9 @@ defmodule Surface.Form.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:surface, "~> 0.12-dev", github: "surface-ui/surface", override: true},
+      {:surface, "~> 0.12.0"},
       {:phoenix_html, "~> 3.3.1"},
-      {:surface_catalogue, only: :dev, github: "surface-ui/surface_catalogue"},
+      {:surface_catalogue, "~> 0.6.3", only: :dev},
       {:esbuild, "~> 0.2", only: :dev},
       {:plug_cowboy, "~> 2.0", only: :dev},
       {:phoenix_live_reload, "~> 1.2", only: :dev},
@@ -106,7 +106,6 @@ defmodule Surface.Form.MixProject do
           LICENSE.md
           mix.exs
           lib
-          assets
           priv/catalogue
         )
     }

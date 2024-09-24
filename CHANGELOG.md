@@ -1,5 +1,5 @@
 # Changelog
 
-## v0.1.0 (yyyy-mm-dd)
+## v0.1.0 (2024-09-24)
 
-* Initial version extracted from Surface vx.x.x
+* Initial version extracted from Surface `v0.11.5`
