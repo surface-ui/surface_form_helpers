@@ -11,12 +11,12 @@ defmodule Surface.Form.MixProject do
   use Mix.Project
 
   @version "0.1.0"
-  @source_url "https://github.com/surface-ui/surface_form"
+  @source_url "https://github.com/surface-ui/surface_form_helpers"
   @homepage_url "https://surface-ui.org"
 
   def project do
     [
-      app: :surface_form,
+      app: :surface_form_helpers,
       version: @version,
       elixir: "~> 1.13",
       description: "Surface wrappers for Phoenix.HTML.Form functions",
@@ -97,7 +97,7 @@ defmodule Surface.Form.MixProject do
       licenses: ["MIT"],
       links: %{
         Website: @homepage_url,
-        Changelog: "https://hexdocs.pm/surface_form/changelog.html",
+        Changelog: "https://hexdocs.pm/surface_form_helpers/changelog.html",
         GitHub: @source_url
       },
       files: ~w(
