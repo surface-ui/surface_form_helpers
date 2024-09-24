@@ -17,7 +17,7 @@ Add `surface_form_helpers` to the list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:surface_form_helpers, "~> 0.1.0"}
+    {:surface_form_helpers, "~> 0.2.0"}
   ]
 end
 ```
